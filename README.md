@@ -1,4 +1,4 @@
-# TCC-Gabriel_Vieira
+# Localização em ambiente fechado por meio do arranjo de antenas e com uso de traçador de raios
 Este projeto aborda o desafio de localizar com precisão a posição de um usuário em ambientes fechados, onde obstáculos e múltiplos trajetos de propagação de sinais complicam a determinação da direção de chegada (DOA) de sinais eletromagnéticos. Com a implementação das redes 5G em ondas milimétricas, que exigem uma infraestrutura densa devido ao alcance limitado dos sinais, surge a oportunidade de aplicar técnicas avançadas para melhorar a estimativa de posição nesses cenários complexos.
 
 Para resolver esse problema, a solução proposta utiliza beamforming para processar os sinais recebidos por arranjos de antenas e calcular as DOAs com base no canal de transmissão. Essas informações são então aplicadas a um algoritmo de aprendizado de máquina, o K vizinhos mais próximos (KNN), que estima a posição do usuário com base em uma base de dados previamente criada, contendo as posições e suas respectivas DOAs em diferentes níveis de potência (0 dBm e 15 dBm).
