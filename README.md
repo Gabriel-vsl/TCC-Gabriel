@@ -1,4 +1,11 @@
 # TCC-Gabriel_Vieira
-Localização em ambiente fechado por meio do arranjo de antenas e com uso de traçador de raios
+Este projeto aborda o desafio de localizar com precisão a posição de um usuário em ambientes fechados, onde obstáculos e múltiplos trajetos de propagação de sinais complicam a determinação da direção de chegada (DOA) de sinais eletromagnéticos. Com a implementação das redes 5G em ondas milimétricas, que exigem uma infraestrutura densa devido ao alcance limitado dos sinais, surge a oportunidade de aplicar técnicas avançadas para melhorar a estimativa de posição nesses cenários complexos.
+Para resolver esse problema, a solução proposta utiliza beamforming para processar os sinais recebidos por arranjos de antenas e calcular as DOAs com base no canal de transmissão. Essas informações são então aplicadas a um algoritmo de aprendizado de máquina, o K vizinhos mais próximos (KNN), que estima a posição do usuário com base em uma base de dados previamente criada, contendo as posições e suas respectivas DOAs em diferentes níveis de potência (0 dBm e 15 dBm).
+A simulação foi implementada em um ambiente composto por duas salas conectadas por dois corredores, cada um equipado com arranjos de antenas retangulares uniformes de 64 elementos. Esse cenário foi projetado para garantir ao menos uma linha de visada (LOS), facilitando a validação das metodologias. A eficácia da solução foi avaliada utilizando métri cas como oerro quadrático médio (RMSE), erro médio absoluto (MAE) e o coeficiente de determinação (R²). Osresultados indicaram umRMSEde2,4metrospara0dBme1,9metros para 15 dBm, além de um MAE de 2,97 metros no 90º percentil para 0 dBm e 2,3 metros no 90º percentil para 15 dBm. O coeficiente de determinação (R²) foi de aproximadamente 0,9 para as coordenadas X e Y, e de 0,36 para a coordenada Z.
+Esses resultados demonstram que, ao aproveitar a infraestrutura das redes 5G e técnicas avançadas de processamento de sinais, como o beamforming, é possível desenvolver uma solução de baixo custo para a localização em ambientes fechados
 
-Arquivos e documentação do TCC para graduação em Engenharia Eletrônica.
+<img width="1197" height="545" alt="image" src="https://github.com/user-attachments/assets/6e4bfb1e-ead2-4914-b995-2e082125174b" />
+
+<img width="816" height="418" alt="image" src="https://github.com/user-attachments/assets/8b3bcf36-3bd2-4662-b3b4-6c764de00db2" />
+
+<img width="860" height="254" alt="image" src="https://github.com/user-attachments/assets/bec84901-e4ce-4748-847d-0c289033b1d5" />
